@@ -1,0 +1,296 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1c1e7a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: #1c1e7a;
+  gap: 1rem;
+}
+
+.backButton {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.backButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navCenter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.arrowButton {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.playerNames {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.prevName,
+.nextName {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  min-width: 120px;
+}
+
+.currentName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  min-width: 200px;
+}
+
+.spacer {
+  width: 120px;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.column {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+#leftColumn {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#rightColumn {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.centerColumn {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  max-height: 700px;
+}
+
+.playerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nameOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(28, 30, 122, 0.95), transparent);
+  padding: 3rem 1.5rem 7rem;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+}
+
+.nameOverlay h2 {
+  font-size: 70;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.dataItem {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flagContainer {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.flagEmoji {
+  display: inline-block;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.clubLogo {
+  width: 120px;
+  height: 120px;
+}
+
+.value {
+  font-size: 52;
+  font-weight: 700;
+  margin: 0;
+}
+
+.label {
+  font-size: 24;
+  color: #c8fe08;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.divider {
+  border: none;
+  border-top: 4px solid #c8fe08;
+  margin: 0;
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1e7a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .backButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .navCenter {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .playerNames {
+    gap: 0.75rem;
+  }
+
+  .prevName,
+  .nextName {
+    font-size: 0.75rem;
+    min-width: auto;
+    display: none;
+  }
+
+  .currentName {
+    font-size: 1.1rem;
+    min-width: auto;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .column {
+    flex: none;
+    padding: 1rem;
+    border: none !important;
+  }
+
+  .centerColumn {
+    padding: 1rem;
+    min-height: 250px;
+  }
+
+  .imageContainer {
+    max-height: 600px;
+  }
+
+  .nameOverlay h2 {
+    font-size: 48;
+    padding: 50 0 0 0;
+  }
+
+  .value {
+    font-size: 26;
+  }
+
+  .label {
+    font-size: 14;
+  }
+
+  .flagContainer {
+    font-size: 26;
+  }
+
+  .clubLogo {
+    max-height: 80px;
+    max-width: 80px;
+  }
+}
