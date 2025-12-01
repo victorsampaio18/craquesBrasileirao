@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Neymar Jr",
+    "photo": "/neymarjr.png",
+    "position": "Meia Ofensivo",
+    "nationality": "Brazil",
+    "flag": "Brasileiro",
+    "age": 33,
+    "games": 249,
+    "clubLogo": "/escudos/santosfc.png",
+    "shirtNumber": 10
+  },
+  {
+    "id": 2,
+    "name": "Lucas",
+    "photo": "/lucasmoura.png",
+    "position": "Ponta Direita",
+    "nationality": "Brazil",
+    "flag": "Brasileiro",
+    "age": 33,
+    "games": 219,
+    "clubLogo": "/escudos/saopaulofc.png",
+    "shirtNumber": 7
+  },
+  {
+    "id": 3,
+    "name": "Pedro",
+    "photo": "/pedroguilherme.png",
+    "position": "Centroavante",
+    "nationality": "Brazil",
+    "flag": "Brasileiro",
+    "age": 28,
+    "games": 300,
+    "clubLogo": "/escudos/flamengo.png",
+    "shirtNumber": 9
+  },
+  {
+    "id": 4,
+    "name": "Thiago Silva",
+    "photo": "/thiagosilva.png",
+    "position": "Zagueiro",
+    "nationality": "Brazil",
+    "flag": "Brasileiro",
+    "age": 41,
+    "games": 179,
+    "clubLogo": "/escudos/fluminense.png",
+    "shirtNumber": 3
+  },
+  {
+    "id": 5,
+    "name": "Memphis Depay",
+    "photo": "/memphisdepay.png",
+    "position": "Centroavante",
+    "nationality": "Brazil",
+    "flag": "Holandes",
+    "age": 31,
+    "games": 59,
+    "clubLogo": "/escudos/corinthians.png",
+    "shirtNumber": 10
+  }
+]
