@@ -19,8 +19,8 @@ O Craques do Brasileirão é um site moderno e minimalista de mostrando os princ
 
 # Estrutura do Projeto (src)
 - app/ (`globals.css`, `layout.tsx`, `page.tsx`)
-- components/ (`navbar.tsx`, `main-weather.tsx`, `additional-info.tsx`, `hourly-forecast-card.tsx`, `daily-forecast-card.tsx`, `footer.tsx`)
-- `.env.local`
+- players/ (`page.tsx`, `players.module.css`)
+- `players.json`
 
 # Instalação
 - **Passo 1:** Clone o repositório
