@@ -19,12 +19,12 @@ O Craques do Brasileirão é um site moderno e minimalista de mostrando os princ
 
 # Estrutura do Projeto (src)
 - app/ (`globals.css`, `layout.tsx`, `page.tsx`)
-- app/players/ (`page.tsx`, `players.module.css`)
+- - players/ (`page.tsx`, `players.module.css`)
 - public/ (`players.json`)
 
 # Instalação
 - **Passo 1:** Clone o repositório
-git clone https://github.com/victorsampaio18/clima-app.git
+git clone https://github.com/victorsampaio18/craquesBrasileirao.git </br>
 `cd weather-website`
 
 - **Passo 2:** Instale as dependências
